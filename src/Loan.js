@@ -50,16 +50,16 @@ const Loan = () => {
 
 
             <div className='max-fund'>
-                <h5>Maximum Funding</h5>
+                <h5 style={{color:"#acacac"}}>Maximum Funding</h5>
                 <h1>Rp 34,567.00</h1>
                 <p></p>
                 
                 <div className='max-fund-sub'>
                     <div className='max-mini'>
                         <h5>Honda ADV 150 CBS</h5>
-                             <h6>2022</h6>
+                             <h6 style={{color:"#acacac"}}>2022</h6>
                     </div>
-                    <GiSettingsKnobs />
+                    <GiSettingsKnobs style={{color:"#acacac"}}/>
 
 
 
@@ -70,7 +70,7 @@ const Loan = () => {
 
 
       <div className='loan-amt'>
-        <h5>Loan Amount</h5>
+        <h5 style={{color:"#acacac"}}>Loan Amount</h5>
         <h3>Rp {loanAmount}.000</h3>
         <input
         className='input'
@@ -81,14 +81,14 @@ const Loan = () => {
           onChange={handleLoanAmountChange}
           
         />
-        <div className='loan-mini'>
+        <div className='loan-mini' style={{color:"#acacac"}}>
             <p>1000.000</p>
             <p>34,567.000</p>
         </div>
       </div>
       
       <div className='period'>
-        <h5>Loan period</h5>
+        <h5 style={{color:"#acacac"}}>Loan period</h5>
         <h3>{loanPeriod} months</h3>
         <input
           type="range"
@@ -98,7 +98,7 @@ const Loan = () => {
           onChange={handleLoanPeriodChange}
          
         />
-         <div className='period-mini'>
+         <div className='period-mini' style={{color:"#acacac"}}>
             <p>6 Months</p>
             <p>18 Months</p>
         </div>
@@ -114,10 +114,10 @@ const Loan = () => {
       </div> */}
 
       <div className='final-amt'>
-      <h5>Estimated monthly installment</h5>
+      <h5 style={{color:"#acacac"}}>Estimated monthly installment</h5>
 
         <h1>Rp {monthlyPayment.toFixed(2)}</h1>
-        <h5>Installment can change according to the result of the verification of the physical condition of the vehicle of the branch office.</h5>
+        <h5 style={{color:"#acacac"}}>Installment can change according to the result of the verification of the physical condition of the vehicle of the branch office.</h5>
 
         <button onClick={handeonclick}>Apply Loan</button>
       </div>
